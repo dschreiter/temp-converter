@@ -1,25 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import ConvertTempV1 from './components/ConvertTempV1';
+import ConvertTempV2 from './components/ConvertTempV2';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<p>
+				A Basic temp converter built in to different versions for code
+				test
+			</p>
+			<ConvertTempV1 />
+			<ConvertTempV2 />
+		</div>
+	);
 }
 
 export default App;
